@@ -509,7 +509,7 @@ hr {
 }
 
 .list__item {
-  width: 586px;
+  max-width: 586px;
   height: 350px;
   border-radius: 3px;
   display: -webkit-box;
@@ -526,6 +526,10 @@ hr {
       -ms-flex-align: start;
           align-items: flex-start;
   cursor: pointer;
+}
+
+.list__item:nth-child(2) {
+  margin: 0px 30px 0px 30px;
 }
 
 .list__item:hover .list__title {
@@ -582,15 +586,18 @@ hr {
 }
 
 .item1 {
-  background: url(../img/Rectangle172.jpg);
+  background: url(../img/Rectangle172.jpg) center no-repeat;
+  width: 100%;
 }
 
 .item2 {
   background: url(../img/Rectangle169.jpg);
+  width: 100%;
 }
 
 .item3 {
   background: url(../img/Rectangle170.jpg);
+  width: 100%;
 }
 
 .item1:hover .list__discrptio {
@@ -675,6 +682,9 @@ hr {
   width: 110px;
   height: 104px;
   margin: 7px 0px 0px 0px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .bed {
@@ -724,11 +734,12 @@ hr {
 .card2__item {
   position: relative;
   height: 360px;
-  width: 586px;
+  max-width: 586px;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
   cursor: pointer;
+  margin: 0px 10px 0px 10px;
 }
 
 .card2__item:hover {
@@ -835,6 +846,10 @@ hr {
   z-index: -1;
 }
 
+.about__img img {
+  width: 100%;
+}
+
 .about__text {
   width: 806px;
   height: 475px;
@@ -883,13 +898,19 @@ hr {
   left: 0;
 }
 
+.question__img img {
+  width: 100%;
+}
+
 .question__form {
   width: 528px;
   height: 457px;
   background-color: #ffffff;
   border-left: 15px solid #44c697;
   position: absolute;
-  top: 100px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
   right: 0;
   text-align: left;
   padding: 51px 50px 50px 30px;
@@ -976,6 +997,7 @@ hr {
   position: absolute;
   right: 0;
   bottom: 0;
+  z-index: -1;
 }
 
 .footer__wrap {
@@ -1179,6 +1201,23 @@ hr {
   color: #44c697;
 }
 
+@media (max-width: 1760px) {
+  .card2__wrap {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 1610px) {
+  .furnitur {
+    margin: 99px 0px 0px 0px;
+  }
+
+  .furnitur__log {
+    top: -120px;
+  }
+}
+
 .webp .buy__box a{ background: url(../img/shopping-cart1.webp) left no-repeat; }
 
 .webp .new__img{ background: url(../img/Rectangle137.webp) no-repeat center; }
@@ -1191,7 +1230,7 @@ hr {
 
 .webp .nav__right:hover{ background: url(../img/Right.webp) center no-repeat; }
 
-.webp .item1{ background: url(../img/Rectangle172.webp); }
+.webp .item1{ background: url(../img/Rectangle172.webp) center no-repeat; }
 
 .webp .item2{ background: url(../img/Rectangle169.webp); }
 
