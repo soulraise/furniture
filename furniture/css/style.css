@@ -1201,6 +1201,16 @@ hr {
   color: #44c697;
 }
 
+.hamburg {
+  width: 35px;
+  display: none;
+}
+
+.hamburg2 {
+  width: 35px;
+  display: none;
+}
+
 @media (max-width: 1760px) {
   .card2__wrap {
     grid-template-columns: 1fr 1fr;
@@ -1215,6 +1225,33 @@ hr {
 
   .furnitur__log {
     top: -120px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .nav__body {
+    display: none;
+  }
+
+  .hamburg {
+    display: block;
+  }
+}
+
+@media (max-width: 1075px) {
+  .nav2__wrap {
+    display: none;
+  }
+
+  .hamburg2 {
+    display: block;
+  }
+}
+
+@media (max-width: 890px) {
+  .card2__wrap {
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 }
 
