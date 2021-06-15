@@ -226,6 +226,10 @@ hr {
   opacity: 0.6;
 }
 
+.burger {
+  display: none;
+}
+
 .furnitur {
   margin: 34px 0px 0px 0px;
   position: relative;
@@ -1239,6 +1243,10 @@ hr {
 }
 
 @media (max-width: 1075px) {
+  .burger {
+    display: block;
+  }
+
   .nav2__wrap {
     display: none;
   }
